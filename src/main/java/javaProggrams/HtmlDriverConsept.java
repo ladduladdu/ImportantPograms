@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 public class HtmlDriverConsept {
@@ -11,11 +12,11 @@ public class HtmlDriverConsept {
 	public static void main(String[] args) throws InterruptedException {
 		
 		
-		//WebDriver driver=new HtmlUnitDriver();
+		WebDriver driver=new HtmlUnitDriver();
 		
-	System.setProperty("phantomjs.binary.path", System.getProperty("user.dir")+"/drivers/phantomjs.exe");
+//	System.setProperty("phantomjs.binary.path", System.getProperty("user.dir")+"/drivers/phantomjs.exe");
 		
-		WebDriver driver=new PhantomJSDriver();
+		//WebDriver driver=new PhantomJSDriver();
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

@@ -18,6 +18,14 @@ System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/d
 				 driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL + "t");
 				 driver.get("http://facebook.com");
 				 
+//				 WebDriver driver=new ChromeDriver();
+//				   driver.get("http://google.com");  
+//				     ((JavascriptExecutor)driver).executeScript("window.open()");
+//				     ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+//				     driver.switchTo().window(tabs.get(1));
+//				     driver.get("http://facebook.com");
+//				driver.quit();
+				 
 
 	}
 
